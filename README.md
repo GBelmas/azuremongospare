@@ -6,17 +6,12 @@ More details to come.
 
 Main Contributors
 --------------------
-Ronny Kwon (Kobojo)
-
-
-Guillaume Belmas (vNext)
-
+Ronny Kwon (Kobojo)  
+Guillaume Belmas (vNext)  
 Eric Craeymeersch (vNext)
 
 Other contributors
 ------------------
-Sébastien Monteil (Kobojo)
-
-Pierre Couzy (Microsoft)
-
+Sï¿½bastien Monteil (Kobojo)  
+Pierre Couzy (Microsoft)  
 Yann Schwartz
