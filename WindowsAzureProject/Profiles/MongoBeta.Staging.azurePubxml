@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AzureCredentials></AzureCredentials>
+    <AzureHostedServiceName>beta-mongo</AzureHostedServiceName>
+    <AzureHostedServiceLabel>BETA Mongo</AzureHostedServiceLabel>
+    <AzureSlot>Staging</AzureSlot>
+    <AzureEnableIntelliTrace>True</AzureEnableIntelliTrace>
+    <AzureEnableProfiling>False</AzureEnableProfiling>
+    <AzureEnableWebDeploy>False</AzureEnableWebDeploy>
+    <AzureStorageAccountName></AzureStorageAccountName>
+    <AzureStorageAccountLabel></AzureStorageAccountLabel>
+    <AzureDeploymentLabel>Mongo.Shard.NoReplica</AzureDeploymentLabel>
+    <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
+    <AzureServiceConfiguration>Release</AzureServiceConfiguration>
+    <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
+    <AzureDeploymentReplacementMethod>AutomaticUpgrade</AzureDeploymentReplacementMethod>
+  </PropertyGroup>
+</Project>

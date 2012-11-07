@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WindowsAzureProject" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="WA-GUEST-OS-2.10_201202-01" schemaVersion="2012-10.1.8">
+  <Role name="MainShardRole">
+    <Instances count="3" />
+    <ConfigurationSettings>
+      <Setting name="Verbose" value="1" />
+      <Setting name="TableInstanceName" value="MainInstances" />
+      <Setting name="TableShardInfoName" value="MainShardInfo" />
+      <Setting name="ContainerName" value="mainshardpool" />
+      <Setting name="MongoDbData" value="DefaultEndpointsProtocol=http;AccountName=;AccountKey=" />
+      <Setting name="RedirectMongoOutputToTrace" value="1" />
+      <Setting name="AutoRestart" value="True" />
+      <Setting name="OpLogSize" value="512" />
+      <Setting name="MainSequencerFreeze" value="False" />
+      <Setting name="PerfCountersSamplingIntervalInMs" value="2500" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2111-12-17T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=;AccountKey=" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="5501EA3D7168B2427CBAAAC6F655D4B14AC80D42" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="MainRoutingConfigRole">
+    <Instances count="3" />
+    <ConfigurationSettings>
+      <Setting name="TableInstanceName" value="MainInstances" />
+      <Setting name="TableShardInfoName" value="MainShardInfo" />
+      <Setting name="ContainerName" value="drivesshardpool" />
+      <Setting name="MongoDbData" value="DefaultEndpointsProtocol=http;AccountName=;AccountKey=" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=;AccountKey=" />
+      <Setting name="ReplicaSetNames" value="ReplicaSetRole1:replica1;ReplicaSetRole2:replica2;ReplicaSetRole3:replica3" />
+      <Setting name="MongoFirewallWhiteList" value="127.0.0.1,88.175.67.172,80.11.92.32" />
+      <Setting name="MongoFirewallEnable" value="0" />
+      <Setting name="RedirectMongoOutputToTrace" value="1" />
+      <Setting name="AutoRestart" value="True" />
+      <Setting name="PerfCountersSamplingIntervalInMs" value="2500" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2111-12-17T23:59:59.0000000+01:00" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="5501EA3D7168B2427CBAAAC6F655D4B14AC80D42" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
