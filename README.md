@@ -12,6 +12,6 @@ Eric Craeymeersch (vNext)
 
 Other contributors
 ------------------
-S�bastien Monteil (Kobojo)  
+Sebastien Monteil (Kobojo)  
 Pierre Couzy (Microsoft)  
 Yann Schwartz
