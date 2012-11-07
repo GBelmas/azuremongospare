@@ -15,3 +15,10 @@ Other contributors
 Sebastien Monteil (Kobojo)  
 Pierre Couzy (Microsoft)  
 Yann Schwartz
+
+
+
+
+License
+-------
+The code is under the New BSD License.
