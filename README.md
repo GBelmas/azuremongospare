@@ -17,4 +17,6 @@ Other contributors
 ------------------
 Sébastien Monteil (Kobojo)
 
+Pierre Couzy (Microsoft)
+
 Yann Schwartz
