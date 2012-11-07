@@ -8,10 +8,13 @@ Main Contributors
 --------------------
 Ronny Kwon (Kobojo)
 
+
 Guillaume Belmas (vNext)
+
 Eric Craeymeersch (vNext)
 
 Other contributors
 ------------------
 Sébastien Monteil (Kobojo)
+
 Yann Schwartz
